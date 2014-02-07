@@ -6,13 +6,14 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
+  <title>Angular Sample</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/sass-bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css({.tmp,app}) styles/main.css -->
@@ -23,6 +24,131 @@
   <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
+
+  <div class="blog-masthead">
+    <div class="container">
+      <nav class="blog-nav">
+        <a class="blog-nav-item active" href="/">Home</a>
+        <a class="blog-nav-item" href="javascript:;">About</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="blog-header">
+      <h1 class="blog-title">Angular Sample</h1>
+      <p class="lead blog-description">A micro-blog sample built with Angular.js and Bootstrap</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 blog-main">
+        <div class="blog-search">
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+        </div>
+
+        <div class="blog-post">
+          <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+          <p class="blog-post-meta pull-left">
+            <span class="label label-primary"><i class="fa fa-thumbs-o-up"></i> 0</span>
+          </p>
+          <p class="blog-post-meta">
+            <i class="fa fa-pencil padding"></i>
+            <i class="fa fa-trash-o padding-left"></i>
+          </p>
+          <p class="blog-post-meta small">January 1, 2014 by Mark</p>
+        </div>
+
+        <div class="blog-post">
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+          <p class="blog-post-meta pull-left">
+            <span class="label label-primary"><i class="fa fa-thumbs-o-up"></i> 5</span>
+          </p>
+          <p class="blog-post-meta">
+            <i class="fa fa-pencil padding"></i>
+            <i class="fa fa-trash-o padding-left"></i>
+          </p>
+          <p class="blog-post-meta small">December 23, 2013 by Jacob</p>
+        </div>
+
+        <div class="blog-post">
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p class="blog-post-meta pull-left">
+            <span class="label label-primary"><i class="fa fa-thumbs-o-up"></i> 10</span>
+          </p>
+          <p class="blog-post-meta">
+            <i class="fa fa-pencil padding"></i>
+            <i class="fa fa-trash-o padding-left"></i>
+          </p>
+          <p class="blog-post-meta small">December 14, 2013 by Chris</p>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">New Post</h3>
+          </div>
+          <div class="panel-body">
+            <form role="form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="email" class="form-control" id="name" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="text">Text</label>
+                <textarea class="form-control" id="text" placeholder="Enter text"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+        <div class="sidebar-module">
+          <button type="button" class="btn btn-primary btn-lg btn-block"><i class="fa fa-pencil padding-right"></i> Write a New Post</button>
+        </div>
+
+        <div class="sidebar-module sidebar-module-inset">
+          <h4>About</h4>
+          <p>This is a sample web application built with Angular.js &amp; Bootstrap for <a href="http://bigmama.programer.io/" target="_blank">BIGMAMA Project</a> Seminar Day.</p>
+        </div>
+
+        <div class="sidebar-module">
+          <h4>Archives</h4>
+          <ol class="list-unstyled">
+            <li><a href="javascript:;">January 2014</a></li>
+            <li><a href="javascript:;">December 2013</a></li>
+            <li><a href="javascript:;">November 2013</a></li>
+            <li><a href="javascript:;">October 2013</a></li>
+            <li><a href="javascript:;">September 2013</a></li>
+            <li><a href="javascript:;">August 2013</a></li>
+            <li><a href="javascript:;">July 2013</a></li>
+            <li><a href="javascript:;">June 2013</a></li>
+            <li><a href="javascript:;">May 2013</a></li>
+            <li><a href="javascript:;">April 2013</a></li>
+            <li><a href="javascript:;">March 2013</a></li>
+            <li><a href="javascript:;">February 2013</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="blog-footer">
+    <ul class="links list-inline">
+      <li><a href="https://github.com/kjunine" target="_blank"><i class="fa fa-github"></i></a></li>
+      <li><a href="https://twitter.com/kjunine" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="https://www.facebook.com/kjunine" target="_blank"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="http://www.linkedin.com/in/kjunine" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="mailto:kjunine@gmail.com" target="_blank"><i class="fa fa-inbox"></i></a></li>
+      <li><a href="javascript:;"><i class="fa fa-rss"></i></a></li></ul>
+    <p>© Daniel Ku 2014</p>
+    <p>Blog template built for <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.</p>
+  </div>
 
   <!--[if lt IE 9]>
   <script src="bower_components/es5-shim/es5-shim.js"></script>
