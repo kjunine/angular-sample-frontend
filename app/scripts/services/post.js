@@ -2,6 +2,7 @@
 
 angular.module('sample')
   .factory('PostService', function() {
+    var nextId = 4;
     var posts = [{
       id: 1,
       name: 'Chris',
@@ -25,6 +26,16 @@ angular.module('sample')
     return {
       list: function() {
         return posts;
+      },
+
+      create: function(post) {
+        post.id = nextId ++;
+        post.date = new Date().getTime();
+        post.likes = 0;
+
+        posts.push(post);
+
+        return post;
       }
     };
   });
