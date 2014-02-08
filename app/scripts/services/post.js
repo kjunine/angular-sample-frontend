@@ -63,6 +63,14 @@ angular.module('sample')
 
       update: function(post) {
         // nothing to do
+      },
+
+      delete: function(id) {
+        var index = searchIndex(id);
+
+        if (index != -1) {
+          return posts.splice(index, 1);
+        }
       }
     };
   });
