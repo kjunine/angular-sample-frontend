@@ -71,6 +71,14 @@ angular.module('sample')
         if (index != -1) {
           return posts.splice(index, 1);
         }
+      },
+
+      like: function(id) {
+        var post = searchPost(id);
+
+        if (post) {
+          post.likes ++;
+        }
       }
     };
   });

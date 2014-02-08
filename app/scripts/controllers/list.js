@@ -7,4 +7,8 @@ angular.module('sample')
     $scope.delete = function(id) {
       PostService.delete(id);
     };
+
+    $scope.like = function(id) {
+      PostService.like(id);
+    }
   });

@@ -8,7 +8,9 @@
 <div class="blog-post" ng-repeat="post in posts | filter:query | orderBy:'-id'">
   <p>{{post.text}}</p>
   <p class="blog-post-meta pull-left">
-    <span class="label label-primary"><i class="fa fa-thumbs-o-up"></i> {{post.likes}}</span>
+    <a href ng-click="like(post.id);">
+      <span class="label label-primary"><i class="fa fa-thumbs-o-up"></i> {{post.likes}}</span>
+    </a>
   </p>
   <p class="blog-post-meta">
     <a ng-href="#modify/{{post.id}}"><i class="fa fa-pencil padding"></i></a>
