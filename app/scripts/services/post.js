@@ -23,9 +23,32 @@ angular.module('sample')
       likes: 0
     }];
 
+    var searchIndex = function(id) {
+      var index = -1;
+
+      for (var i = 0; i < posts.length; i ++) {
+        if (posts[i].id == id) index = i;
+      }
+
+      return index;
+    };
+    var searchPost = function(id) {
+      var index = searchIndex(id);
+
+      if (index != -1) {
+        return posts[index];
+      } else {
+        return null;
+      }
+    };
+
     return {
       list: function() {
         return posts;
+      },
+
+      read: function(id) {
+        return searchPost(id);
       },
 
       create: function(post) {
@@ -36,6 +59,10 @@ angular.module('sample')
         posts.push(post);
 
         return post;
+      },
+
+      update: function(post) {
+        // nothing to do
       }
     };
   });

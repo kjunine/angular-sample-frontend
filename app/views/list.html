@@ -11,7 +11,7 @@
     <span class="label label-primary"><i class="fa fa-thumbs-o-up"></i> {{post.likes}}</span>
   </p>
   <p class="blog-post-meta">
-    <i class="fa fa-pencil padding"></i>
+    <a ng-href="#modify/{{post.id}}"><i class="fa fa-pencil padding"></i></a>
     <i class="fa fa-trash-o padding-left"></i>
   </p>
   <p class="blog-post-meta small">{{post.date | date}} by {{post.name}}</p>

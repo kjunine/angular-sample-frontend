@@ -13,6 +13,9 @@ angular.module('sample', [
       }).when('/new', {
         templateUrl: 'views/create.html',
         controller: 'CreateController'
+      }).when('/modify/:id', {
+        templateUrl: 'views/update.html',
+        controller: 'UpdateController'
       }).otherwise({
         redirectTo: '/'
       });
